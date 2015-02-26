@@ -1,0 +1,85 @@
+<html>
+<head>
+</head>
+<body>
+below is totally varying, same, size varying (for heatmap click tracking). no identifiers
+<section>
+    <img src="http://www.ihop.com/menus/main-menu/pancakes/-/media/ihop/MenuItems/Pancakes/Harvest%20Grain%20and%20Nut%20Pancakes/Harvest_Grain_Nut_Pancakes.png?mh=367" width="200px"/>
+    <img src="http://fc09.deviantart.net/fs70/i/2011/301/4/8/fat_rabbit_by_whisperingwonderwolf-d4e7is5.jpg" width="200px"/>
+    <img src="http://placehold.it/100&text=smaller+image" />
+</section>
+<br />
+below is for vertically varying, based on text. no identifiers.
+<section>
+    <p>This is not much text.</p>
+</section>
+<br />
+below is for vertically varying, based on text. DOM id.
+<section id="idtesttxtsxn">
+    <p>This is not much text.</p>
+</section>
+<br />
+below is for vertically varying, based on text. ceid.
+<section ceid="ceidtesttxtsxn">
+    <p>This is not much text.</p>
+</section>
+<br />
+below is for vertically varying, based on text. -ce-capture class..
+<section class="-ce-capture" >
+    <p>This is not much text.</p>
+</section>
+<br />
+below is for vertically varying, based on text (inverted). ceid
+<section ceid="ceidtesttxtsxninverted">
+    <p>This is lots of text.  Hands to go on account draught code of conduct rigging hardtack interloper Buccaneer gangway Jolly Roger. Hands hulk Buccaneer Nelsons folly take a caulk reef gangway sheet wench black jack. Poop deck lass ballast fathom Spanish Main cackle fruit fire in the hole black spot hang the jib pressgang.
+        Chase belaying pin landlubber or just lubber aye scuppers Arr splice the main brace black jack bounty grog.
+    </p>
+    <p>Dance the hempen jig parley to go on account Sea Legs gabion interloper Cat o'nine tails Sail ho league matey. Bilged on her anchor spike scuttle marooned topmast list cutlass Chain Shot parrel skysail.
+        Wherry loaded to the gunwalls reef sails swab Privateer prow haul wind Sea Legs galleon Barbary Coast. Hulk gun Nelsons folly draught to go on account topmast Yellow Jack Cat o'nine tails transom Sea Legs. Parley keel spirits loot Gold Road barque broadside mutiny shrouds port.
+    </p>
+    <p>
+        Haul wind Plate Fleet Corsair splice the main brace swing the lead draft Arr pink hang the jib cog. Hands port lugsail galleon maroon Barbary Coast six pounders aye pressgang jury mast. Brethren of the Coast quarterdeck mizzenmast black spot starboard scourge of the seven seas hempen halter trysail snow yo-ho-ho.
+        Bucko me careen scuttle Blimey deadlights mizzen grapple ye barkadeer. Aye avast take a caulk fore rutters Jack Tar Sea Legs spike gunwalls nipper. Brethren of the Coast hornswaggle ballast topgallant chantey lateen sail belaying pin hearties bring a spring upon her cable boatswain.
+        Holystone jolly boat broadside topgallant hornswaggle topsail spike fire ship bring a spring upon her cable aft. Fire in the hole rigging furl American Main wench belay ye black jack quarter draft. Admiral of the Black hardtack hogshead aft sheet hail-shot fire in the hole lass hang the jib bilge water.
+    </p>
+</section>
+<br />
+below is different images.  standard DOM id.
+<section>
+    <img id="idtestimg" src="http://placehold.it/150/ffffff/000000&text=image1" />
+</section>
+<br />
+below is different images.  ceid.
+<section>
+    <img ceid="ceidtestimg" src="http://placehold.it/150/ffffff/000000&text=image1" />
+</section>
+<br />
+below is different images.  -ce-capture on images.
+<section>
+    <img class="-ce-capture" src="http://placehold.it/150/ffffff/000000&text=image1" />
+    <img class="-ce-capture" src="http://placehold.it/150/ffff00/000000&text=imageA" />
+</section>
+<br />
+below is different images.  -ce-capture on section.
+<section class="-ce-capture">
+    <img src="http://placehold.it/150/ffffff/000000&text=image1" />
+    <img src="http://placehold.it/150/ffff00/000000&text=imageA" />
+</section>
+
+
+<script type="text/javascript">
+    //adding for track by name
+    var CE_SNAPSHOT_NAME = "othersite";
+
+    setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0030/0570.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+    //vary b/w sites
+    function CE_READY() {
+        CE2.set(1, 'othersite1');
+    }
+</script>
+</body>
+</html>
