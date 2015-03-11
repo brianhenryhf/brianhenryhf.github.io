@@ -1,0 +1,1224 @@
+/*---------- This is the main style sheet for SPWs ----------*/
+
+/*--- clear floats ---*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*----- Headings and other block text -----*/
+h1, h2, h3 {
+  color: #333;
+  font-weight: 300;
+  padding: 0;
+  line-height: 1.3;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.375em;
+  margin: .5em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+p, dl, dt, dd {
+  color: #555;
+  font-weight: 300;
+  line-height: 1.625;
+  margin: .5em 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a img {
+  border: none;
+}
+
+/*---------- Form Elements ----------*/
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  background-color: #fff;
+}
+
+label, input, textarea {
+  color: #555;
+  font-family: inherit;
+  font-size: .85em;
+  line-height: 1.3;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+label.last,
+input.last,
+textarea.last {
+  margin-right: 0;
+}
+
+label.error {
+  color: #b11303;
+}
+
+input[type="email"].error,
+input[type="tel"].error,
+input[type="text"].error {
+  background-color: #f4d7d7;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  border: 1px solid #bcbcbc;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  border-radius: .25em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: .6em;
+}
+
+/*------------------------------------------------------------
+Form fields will have an input element with this class.
+Bots will (generally) include this field in forms they submit.
+Browser will not, as we essentially remove the field here.
+--------------------------------------------------------------*/
+
+input.antiSpamAuthKey {
+  display: none !important;
+}
+
+/*---------- Buttons ----------*/
+
+/* generally want form elements to take up 100% width of container, add .row selector or .right/.left later if needed */
+input,
+button,
+.button {
+  width: 100%;
+}
+
+button,
+.button,
+input.button {
+  display: block;
+  border-radius: .25em;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+
+button,
+.button {
+  background: #82c013;  /* default to HF green, override in some themes */
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  line-height: 2.25;
+}
+
+button:hover,
+.button:hover {
+  color: #fff;
+  background: #a0d040;
+}
+
+/*---------- Links ----------*/
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+/*---------- SPW base styles ----------*/
+body {
+  background-color: #777;
+  color: #333;
+  display: block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#page {
+  margin: 0 auto;
+  max-width: 48em;
+  padding: 0;
+}
+
+.header, .footer {
+  background-color: #777;
+  position: relative;
+}
+
+.content {
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/*--- desktop side margins ---*/
+.innerContainer {
+  margin: 0 2.5em 6em;
+}
+
+/*--- mobile side margins ---*/
+@media screen and (max-width: 36em) {
+  .innerContainer {
+    margin: 0 1.125em 2.5em;
+  }
+}
+
+
+/*---------- Social Icons in header and footer ----------*/
+/*--- icons in header are for branded pages, in footer for color theme pages ---*/
+ul.socialLinks {
+  overflow: hidden;
+  list-style-type: none;
+}
+
+ul.socialLinks li a {
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+/*--- mobile header ---*/
+.header .mobileMenu {
+  border-bottom: .125em solid #fff;
+  min-height: 3em;
+}
+
+.header .icon-menu {
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: .1em;
+  right: .1em;
+}
+
+/*--- mobile header branded ---*/
+.header ul.socialLinks {
+  display: none;
+}
+
+/*--- desktop branded ---*/
+.header ul.socialLinks li {
+  float: right;
+  margin: 0 0 0 .75em;
+}
+
+ul.socialLinks li a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 36em) {
+  .header ul.socialLinks {
+    display: block;
+    padding-top: .75em;
+  }
+  .header .mobileMenu {
+    display: none;
+  }
+}
+
+/*--- desktop themes ---*/
+.bottomSocial {
+  margin: 6em auto 3em;
+}
+
+.bottomSocial ul.socialLinks {
+  padding: 0;
+  text-align: center;
+}
+
+.bottomSocial ul.socialLinks li {
+  display: inline-block;
+}
+
+/*--- mobile themes ---*/
+@media screen and (max-width: 36em) {
+  .bottomSocial {
+    margin: 2em auto 1em;
+  }
+}
+
+
+/*---------- Top Photo Viewer ----------*/
+.topPhotoViewer {
+  text-align: center;
+  position: relative;
+  line-height: 0; /* hack for fighting the space between inline block elements */
+  background: #e7eaeb;
+  overflow: hidden;
+}
+
+.topPhotoViewer img {
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  border-top: 0;
+  border-bottom: 0;
+  max-height: 27em;
+  max-width: 100%;
+  padding: 0 1em;
+}
+
+#topPhotoViewerBackground {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  right: 0;
+}
+
+.topPhotoViewer .icon-right-open-big,
+.topPhotoViewer .icon-left-open-big {
+  color: #FFF;
+  font-size: 3em;
+  opacity: .7;
+  top: 50%;
+  position: relative;
+}
+
+.topPhotoViewer .prevImage,
+.topPhotoViewer .nextImage {
+  height: 100%;
+  position: absolute;
+  width: 5em;
+  z-index: 2;
+}
+
+.topPhotoViewer .nextImage {
+  right: 0;
+}
+
+.topPhotoViewer .prevImage {
+  left: 0;
+}
+
+@media screen and (max-width: 36em) {
+  .topPhotoViewer .icon-right-open-big,
+  .topPhotoViewer .icon-left-open-big{
+    display: none;
+  }
+}
+
+/*---------- Photos ----------*/
+#photos {
+  overflow-x: auto;
+  margin-bottom: 2.5em;
+}
+
+#photos a {
+  text-decoration: none;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#photos img {
+  margin: 0 1em 1em 0;
+}
+
+.photoModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #222;
+
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.photoModal button {
+  position: fixed;
+  width: auto;
+  padding: 0 2em;
+  bottom: 1em;
+  min-width: 6em;
+}
+
+.photoModal button.prev {
+  left: 1em;
+}
+
+.photoModal button.next {
+  right: 1em;
+}
+
+/*---------- Navigation ----------*/
+nav.main {
+  border-bottom: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+  box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  background-color: #fff;
+  font-size: 1.25em;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*--- mobile ---*/
+@media screen and (max-width: 36em) {
+  nav.main {
+    position: absolute;
+    width: 100%;
+    top: 3em;
+    z-index: 3;
+    display: none;
+  }
+  nav > ul li a.navLink.map {
+    display: none;
+  }
+}
+
+/*--- social icons for mobile nav bar ---*/
+nav > ul li:first-child {
+  border-top: 1px solid #999;
+}
+
+nav > ul li span.share,
+nav > ul li a.navLink {
+  color: #555;
+  display: block;
+  text-decoration: none;
+  padding: .5em;
+  text-align: left;
+}
+
+nav > ul li.social,
+nav > ul li a.navLink {
+  border-bottom: 1px solid #999;
+}
+
+/*--- fontello social icons desktop nav bar ---*/
+.nav li.social a[class*="icon-"] {
+  color: #aaa;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/*--- override default fontello styling ---*/
+.nav li.social a[class*="icon-"]:before {
+  margin: 0 .5em .5em 0;
+}
+
+/*--- create margin indentation before left-most icon ---*/
+.nav li a.icon-facebook-circled {
+  margin-left: .65em;
+}
+
+/*--- desktop ---*/
+@media screen and (min-width: 36em) {
+  nav.main {
+    margin-bottom: 2em;
+  }
+
+  nav > ul {
+    display: table;
+    width: 100%;
+  }
+
+  nav > ul li {
+    display: table-cell;
+  }
+
+  nav > ul li:first-child {
+    border-top: none;
+  }
+
+  nav > ul li.social {
+    display: none;
+  }
+
+  nav > ul li a.navLink {
+    border: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+  @include box-sizing(border-box);
+  }
+}
+
+
+/*---------- Basic Info Section ----------*/
+.basicInfo {
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  overflow: hidden;
+}
+
+.listingInfo,
+.agentInfo {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  width: 98%;
+}
+
+.agentInfo {
+  border: 1px solid #aaa;
+  overflow: hidden;
+  padding: .65em;
+}
+
+@media screen and (max-width: 36em) {
+  .listingInfo {
+    margin-bottom: 2em;
+  }
+}
+
+/*--- desktop ---*/
+@media screen and (min-width: 36em) {
+  .listingInfo,
+  .agentInfo {
+    width: 48%;
+  }
+  .listingInfo {
+    padding-top: .5em;
+  }
+  .agentInfo {
+    float: right;
+  }
+  .basicInfo {
+    margin-top: 0;
+  }
+}
+
+.price {
+  font-size: 2.125em;
+}
+
+.partyLogoContainer {
+  float: left;
+  font-size: 0;
+  overflow: hidden;
+  margin-right: 15px;
+  text-align: center;
+  width: 90px;
+}
+
+.partyLogo {
+  max-height: 90px;
+  max-width: 90px;
+  margin 0 auto;
+}
+
+.rightColumn {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.partyLogo + div {
+  margin-left: 105px;
+}
+
+.rightColumn .partyName {
+  font-size: 1.125em;
+  margin: .5em 0;
+}
+
+.rightColumn .partyPhone {
+  font-size: .75em;
+  margin: .5em 0;
+}
+
+.rightColumn button.partyEmail {
+  margin: .75em 0 0;
+}
+
+
+/*---------- Details Section ----------*/
+.details,
+.interiorDetails,
+.exteriorDetails {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.interiorDetails ul,
+.exteriorDetails ul {
+  padding: .5em 1em;
+  margin: 0;
+
+}
+
+.interiorDetails ul li,
+.exteriorDetails ul li {
+  line-height: 2;
+}
+
+/*--- desktop - split into 2 columns ---*/
+@media screen and (min-width: 36em) {
+  .interiorDetails ul,
+  .exteriorDetails ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    list-style-position: inside;
+  }
+
+  .interiorDetails li,
+  .exteriorDetails li {
+    overflow: hidden; /* Fix for firefox and IE 10-11  */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Deprecated Firefox */
+    -moz-column-break-inside:avoid; /* Current Firefox */
+    column-break-inside:avoid;
+    break-inside: avoid; /* IE 10+ */
+    break-inside: avoid-column;
+  }
+
+  .moreDetails {
+    margin-top: 1em;
+  }
+}
+
+
+/*---------- Community Section ----------*/
+h2#community {
+  margin: 1.5em 0;
+}
+
+.communitySection {
+  border-top: 1px solid #777;
+  margin: 2em 0 6em;
+}
+
+table.community {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: hidden;
+  color: #555;
+  width: 100%;
+}
+
+.community td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 1.7em;
+}
+
+.community .value {
+  margin-top: 0.5em;
+  font-size: 1.65em;
+}
+
+/*--- revert/restore properties on larger screen ---*/
+@media all and (max-width: 29em) {
+  h2#community {
+    margin: 1.5em 0 .5em;
+  }
+  table.community {
+    width: 80%;
+  }
+  .community tr {
+    display: inline;
+  }
+  .community td {
+    border: none;
+    border-bottom: 1px solid #ccc;;
+    margin: 0;
+    width: 100%;
+    float: left;
+  }
+}
+
+
+/*---------- Graphs ----------*/
+.graphs {
+  margin: 1em auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.graphHolder {
+  margin-bottom: 5em;
+}
+
+.graphHeader {
+  margin-bottom: 2.25em;
+}
+
+@media screen and (max-width: 36em) {
+  .graphHolder img {
+    width: 100%;
+  }
+}
+
+
+/*---------- Lead Form ----------*/
+
+.leadSection {
+  border-top: 1px solid #777;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 1em 0 2em;
+  overflow: hidden;
+  padding: 3em 0;
+}
+
+#successMessage {
+  display: none;
+}
+
+.leftColumn.formWrapper {
+  border-right: 1px solid #777;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  margin-right: 2em;
+  margin-top: .5em;
+  padding-right: 1.5em;
+  width: 65%;
+}
+
+.formRow {
+  margin: 1em 0;
+  overflow: hidden;
+  min-height: 4em; /* prevent row height changing when multi-line validation messages display */
+}
+
+.formRow .formColumn {
+  box-sizing: border-box;
+  float: left;
+  width: 47%;
+}
+
+.formRow .formColumn.left {
+  margin-right: 6%;
+}
+
+form.productLeadForm label {
+  font-size: .8em;
+  font-weight: normal;
+}
+
+form.productLeadForm label.error {
+  /*  width: 25%;*/
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+form.productLeadForm textarea {
+  height: 6em;
+  width: 100%;
+}
+
+form.productLeadForm .userComment {
+  margin: 2em 0;
+}
+
+form.productLeadForm .submitContainer {
+  margin: 0 auto;
+  width: 56%;
+}
+
+form.productLeadForm button {
+  font-size: 1.125em;
+  margin-bottom: .5em;
+}
+
+/*--- mobile ---*/
+@media screen and (max-width: 27em) {
+  .leadSection h2 {
+    margin-bottom: 1em;
+  }
+  .leftColumn.formWrapper {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .formRow .formColumn {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .formRow {
+    margin: 0;
+  }
+  .formRow .formColumn.left {
+    margin-right: 0;
+  }
+  form.productLeadForm .userComment {
+    margin-top: 1em;
+  }
+  form.productLeadForm .submitContainer {
+    width: 80%;
+  }
+}
+
+
+/*---------- Party Info ----------*/
+/* base: works without form */
+.partyInfo {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 1.3;
+  margin: 1em auto;
+  min-width: 6em;
+  max-width: 20em;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* with form */
+.leftColumn.formWrapper + .partyInfo {
+  float: left;
+  max-width: 10.5em;
+}
+
+@media screen and (min-width: 45em) {
+  .leftColumn.formWrapper + .partyInfo {
+    text-align: left;
+  }
+}
+
+
+/*--- tablet and mobile, stack and center contact info ---*/
+@media screen and (max-width: 45em) {
+  .leftColumn.formWrapper {
+    width: 100%;
+    border-right: 0;
+  }
+  .partyInfo {                            /* without form */
+    margin: 0 auto;
+    padding-top: 3em;
+    max-width: 20em;
+  }
+  .leftColumn.formWrapper + .partyInfo {   /* with form */
+    float: none;
+    max-width: 20em;
+  }
+}
+
+.partyInfo .primaryLogo,
+.partyInfo .secondaryLogo {
+  max-width: 115px;
+  max-height: 155px;
+  margin: .5em 0;
+}
+
+.partyInfo .primaryName,
+.partyInfo .secondaryName {
+  font-weight: bold;
+  margin: .25em 0;
+}
+
+.partyInfo .companyName {
+  font-size: 12px;
+  margin: .25em 0;
+}
+
+.partyInfo .siteLink {
+  font-size: .8em;
+  margin: .25em 0;
+}
+
+
+/*---------- Maps ----------*/
+.mapSection {
+  margin-bottom: 2em;
+  border-top: 1px solid #777;
+  padding-top: 1em;
+}
+
+.mapSectionHead {
+  margin: .5em 0 1em;
+}
+
+.mapContainer {
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+.mapSection h3 {
+  font-size: 1em;
+  margin: 2em 0 .2em;
+}
+
+#directions {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  max-width: 20em;
+}
+
+#directions input[type="text"] {
+  width: 60%;
+  font-size: 1em;
+  margin-right: 5%;
+}
+
+#directions button {
+  width: 33%;
+  display: inline;
+  vertical-align: middle;
+}
+
+
+/*---------- Schools ----------*/
+.schoolsSection {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  margin: .5em 0 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.schoolsSectionHead {
+  margin-bottom: .25em;
+}
+
+.schoolsSection h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+
+.schoolList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.schoolList li {
+  margin-bottom: .5em;
+}
+
+/*--- mobile ---*/
+@media screen and (max-width: 32em) {
+  .schoolsSection {
+    line-height: 1.3;
+  }
+}
+
+/*---------- Footer ----------*/
+.footer {
+  min-height: 4em;
+}
+
+.hfBranding {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+
+.hfBranding span.text,
+.hfBranding span.textDark {
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 3.5em;
+  vertical-align: top;
+}
+
+.hfBranding span.textDark {
+  color: #333;
+}
+
+.hfBranding img.hfLogo {
+  height: 3.5em;
+}
+
+/*--- mobile ---*/
+@media screen and (max-width: 32em) {
+  .topPhotoViewer img {
+    padding: 0;
+  }
+  .footer {
+    display: none;
+    margin: 0;
+  }
+}
+
+
+/*---------- Styles for Header on Demo (Sample) Page only  ----------*/
+
+.demoHeader {
+  border-bottom: 0.25em solid #ef7521;
+  -webkit-box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+  box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+}
+
+.demoHeader .fluidContainer {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0 3% 0 6%;
+  overflow: hidden;
+  padding: .75em;
+  vertical-align: middle;
+  min-height: 3.25em;
+}
+
+.demoHeader img.hfLogo {
+  float: left;
+  height: 2em;
+}
+
+.demoHeader h2 {
+  color: #333;
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 1% 0 3%;
+}
+
+.demoHeader button.learnMore {
+  float: right;
+  padding: 0 1%;
+  width: 15%;
+}
+
+@media screen and (max-width: 53em) {
+  .demoHeader h2 {
+    font-size: 1.25em;
+    line-height: 1.75;
+  }
+}
+
+@media screen and (max-width: 47em) {
+  .demoHeader h2 {
+    font-size: 1em;
+    line-height: 2;
+  }
+  .demoHeader button.learnMore {
+    font-size: .9em;
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .demoHeader .fluidContainer {
+    margin: 0 2%;
+  }
+  .demoHeader img.hfLogo {
+    float: left;
+    height: 1.65em;
+  }
+  .demoHeader button.learnMore {
+    font-size: .9em;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  .demoHeader .fluidContainer {
+    margin: 0;
+  }
+  .demoHeader h2 {
+    font-size: 1em;
+    line-height: 1.75;
+  }
+  .demoHeader img.hfLogo {
+    height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .demoHeader h2 {
+    font-size: .8em;
+    line-height: 2;
+    width: 55%;
+  }
+  .demoHeader button.learnMore {
+    font-size: .8em;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .demoHeader img.hfLogo {
+    height: 1.25em;
+  }
+  .demoHeader h2 {
+    font-size: .65em;
+    line-height: 1.1;
+    padding: 0 0 0 2%;
+    width: 40%;
+  }
+  .demoHeader button.learnMore {
+    font-size: .75em;
+    width: 28%;
+  }
+}
+
+/*---------- Beige Theme CSS ----------*/
+
+body, .header, .footer {
+  background-color: #d8ca99;
+}
+
+/*--- mobile navigation social icon colors ---*/
+.nav li.social a[class*="icon-"] {
+  color: #64585a;
+}
+
+.nav li.social a[class*="icon-"]:hover {
+  color: #c8a062;
+}
+
+/*--- mobile navigation menu hover colors ---*/
+@media screen and (max-width: 36em) {
+  nav > ul li a.navLink:hover {
+    background-color: #c8a062;
+    color: #fff;
+  }
+}
+
+/*--- links ---*/
+a {
+  color: #64585a;
+}
+
+a:hover {
+  color: #c8a062;
+}
+
+/*--- desktop navigation link color ---*/
+@media screen and (min-width: 40em) {
+  .nav li a.navLink {
+    color: #64585a;
+  }
+  .nav li a.navLink:hover {
+    color: #c8a062;
+  }
+}
+
+/*--- buttons ---*/
+button,
+.button {
+  background: #92847b;
+}
+
+button:hover,
+.button:hover {
+  background: #cbb9a5;
+}
+
+/*--- desktop bottom social icons use button colors ---*/
+ul.socialLinks li a {
+  color: #92847b;
+}
+
+ul.socialLinks li a:hover {
+  color: #cbb9a5;
+}
+
+/*---------- Top Photo Viewer ----------*/
+.topPhotoViewer .icon-right-open-big:hover ,
+.topPhotoViewer .icon-left-open-big:hover {
+  color: #92847b;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../../images/font/fontello.eot?60940398');
+  src: url('../../images/font/fontello.eot?60940398#iefix') format('embedded-opentype'),
+  url('../../images/font/fontello.woff?60940398') format('woff'),
+  url('../../images/font/fontello.ttf?60940398') format('truetype'),
+  url('../../images/font/fontello.svg?60940398#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?60940398#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-menu:before { content: '\e800'; } /* 'î €' */
+.icon-twitter-circled:before { content: '\e801'; } /* 'î ' */
+.icon-facebook-circled:before { content: '\e802'; } /* 'î ‚' */
+.icon-gplus-circled:before { content: '\e803'; } /* 'î ƒ' */
+.icon-pinterest-circled:before { content: '\e804'; } /* 'î „' */
+.icon-lodging:before { content: '\e805'; } /* 'î …' */
+.icon-droplet:before { content: '\e806'; } /* 'î †' */
+.icon-right-open-big:before { content: '\e807'; } /* 'î ‡' */
+.icon-left-open-big:before { content: '\e808'; } /* 'î ˆ' */
