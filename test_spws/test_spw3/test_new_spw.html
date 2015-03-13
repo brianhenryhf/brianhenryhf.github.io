@@ -21,7 +21,7 @@
     <section class="topPhotoViewer">
       <div class="prevImage"><span class="icon-left-open-big"></span></div>
       <div class="nextImage"><span class="icon-right-open-big"></span></div>
-      <div class="mainImage"></div>
+      <div class="mainImage -ce-capture"></div>
       <canvas id="topPhotoViewerBackground"></canvas>
     </section>
     <nav class="main">
@@ -41,7 +41,7 @@
       </ul>
     </nav>
     <div class="innerContainer">
-      <section class="basicInfo">
+      <section class="basicInfo -ce-capture">
         <div class="listingInfo"><span class="price" itemscope itemtype="http://schema.org/Product"> <meta
             itemprop="name" content="2112 syrinx st.., Chicago, IL 60616"/> <span itemprop="offers" itemscope
                                                                                       itemtype="http://schema.org/Offer"> <meta
@@ -58,7 +58,7 @@
         </div>
         <div class="agentInfo" itemscope itemtype="http://schema.org/RealEstateAgent">
           <meta itemprop="url" content=""/>
-          <div class="partyLogoContainer"><img class="partyLogo"
+          <div class="partyLogoContainer"><img class="partyLogo" ceid="partyLogo"
                                                src="http://placehold.it/60x77&text=3:agentinfo"
                                                alt="Susie Agentson" itemprop="logo"/></div>
           <div class="rightColumn">
@@ -113,7 +113,7 @@
             src="http://placehold.it/186x140&text=3:10"
             alt="Property Photo"/></a></div>
       </section>
-      <section class="details clearfix"><h2 id="details">Details</h2>
+      <section class="details clearfix -ce-capture"><h2 id="details">Details</h2>
 
         <p>A pretty good house.  lorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem
           lorem lorem loremlorem lorem loremlorem lorem loremlorem lorem loremloremlorem lorem loremlorem lorem loremlorem lorem loremlorem lorem lorem
@@ -125,7 +125,7 @@
         <p>Baths: 4 Full, 2 Half</p>
 
         <p>Taxes: $1,000 per year</p></section>
-      <section class="interiorDetails"><h2>Interior Details</h2>
+      <section class="interiorDetails -ce-capture"><h2>Interior Details</h2>
         <ul>
           <li>Master Bedroom 2000X1</li>
           <li>Bedroom 2 123X32</li>
@@ -149,7 +149,7 @@
 
           <p><strong>Features:</strong> Haunts and spirits, Humidifier, Wet Bar</p></div>
       </section>
-      <section class="exteriorDetails clearfix"><h2>Exterior Details</h2>
+      <section class="exteriorDetails clearfix -ce-capture"><h2>Exterior Details</h2>
         <ul>
           <li>Explosive panelling</li>
           <li>Lot Features Sidewalks</li>
@@ -158,7 +158,7 @@
         <div class="clearfix"></div>
         <div class="moreDetails"><p><strong>Features:</strong> Mushy Exterior</p></div>
       </section>
-      <section class="communitySection clearfix"><h2 id="community">Community</h2>
+      <section class="communitySection clearfix -ce-capture"><h2 id="community">Community</h2>
         <table class="community">
           <tr>
             <td> Population
@@ -236,26 +236,29 @@
           <div><a href="http://www.bhenry.local.homefinder.com/agent/Melinda-Jakovich-1903356d/" rel="nofollow"><img
               class="primaryLogo"
               src="http://placehold.it/60x77&text=3:leadparty"
-              alt="Susie Agentson"/></a></div>
+              alt="Susie Agentson"
+              ceid="primaryLogo"/></a></div>
           <div class="primaryName">Susie Agentson</div>
           <div>(911) 911-1199</div>
           <div class="siteLink"><a href="http://www.bhenry.local.homefinder.com/agent/Susie-Agentson-1903356d/"
-                                   rel="nofollow">View My Listings</a></div>
+                                   rel="nofollow"
+                                   ceid="primaryListings">View My Listings</a></div>
           <div><a
               href="http://www.bhenry.local.homefinder.com/broker/Soap/"
               rel="nofollow"><img class="secondaryLogo"
                                   src="http://placehold.it/77x60&text=3:leadsecondarylogo"
-                                  alt="Soap"/></a></div>
+                                  alt="Soap"
+                                  ceid="secondaryLogo"/></a></div>
           <div class="secondaryName">Soap</div>
-          <div><a class="siteLink" href="http://www.Soap.com">View Our Website</a></div>
+          <div><a class="siteLink" href="http://www.Soap.com" ceid="secondaryWebsite>View Our Website</a></div>
           <div class="siteLink"><a
               href="http://www.bhenry.local.homefinder.com/broker/Soap/"
-              rel="nofollow">View Our Listings</a></div>
+              rel="nofollow" ceid="secondaryListings">View Our Listings</a></div>
         </aside>
       </section>
       <section class="mapSection clearfix"><h2 id="map" class="mapSectionHead">Map</h2>
 
-        <div id="mapContainer" class="mapContainer"></div>
+        <div id="mapContainer" class="mapContainer -ce-capture"></div>
         <h3>Driving Directions</h3>
 
         <form id="directions" method="get" action="http://maps.google.com/maps" target="_blank"><input type="hidden"
@@ -291,7 +294,7 @@
         "latitude": 41.835873,
         "longitude": -87.638039
       }; </script>
-      <section class="schoolsSection clearfix"><h2 id="schools" class="schoolsSectionHead">Schools Near Chicago, IL</h2>
+      <section class="schoolsSection clearfix -ce-capture"><h2 id="schools" class="schoolsSectionHead">Schools Near Chicago, IL</h2>
 
         <h3>Elementary Schools</h3>
         <ul class="schoolList">
