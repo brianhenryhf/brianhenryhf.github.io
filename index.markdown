@@ -5,9 +5,10 @@ Hi.  I'm Brian.
 
 I've wrangled software for years now - web, enterprise stack, devops, you name it.  I solve complicated new problems, and I untangle byzantine legacy codebases.  I like to work with folks inside and outside of tech - I love to  make complex problems comprehensible and, most importantly, get them solved.  
 
-Please let me know how I can help your business thrive!: <a href="mailto:info@bitpan.com">Email</a>
+Please let me know how I can help your business thrive!: <a href="mailto:info@bitpan.com">info@bitpan.com</a>
 
-(Also, when I'm not working, I love to cook, am learning archery, co-own a rabbit, and am learning to solder.)
+(Also, while work is important, I also love to cook (instant pot or bbq qre current foci; always working on unlocking the best roaasted veggies), am learning archery (recurve target shooting, mostly badly), care for a rabbit (a senior sweetheart), and am learning to solder (slowly... I'll build the perfect keyboard someday...)
+
 
 &nbsp; 
 
