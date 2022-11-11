@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 Hi.  I'm Brian.  
@@ -10,16 +7,17 @@ I've wrangled software for years now - web, enterprise stack, devops, you name i
 
 Please let me know how I can help your business thrive!: <a href="mailto:info@bitpan.com">Email</a>
 
-----
+&nbsp; 
+
 **Links:**
 
-[Github](https://github.com/brianhenryhf)
+[Brian @ Github](https://github.com/brianhenryhf)
 
-[Stack Overflow](https://stackoverflow.com/users/1795230/brian-henry)
+[Brian @ Stack Overflow](https://stackoverflow.com/users/1795230/brian-henry)
 
-[LinkedIn](https://www.linkedin.com/in/brian-henry-codes/)
+[Brian @ LinkedIn](https://www.linkedin.com/in/brian-henry-codes/)
 
-Certifications:
+Brian's Recent Certifications:
 
 - [Google Cloud Platform](https://www.credential.net/01fb0598-7d45-49ec-9ddb-90dcd1e95f0e?key=2532997703de89061a86e62847725b33cf661cbbb3873cca1e23802523269693)
 
