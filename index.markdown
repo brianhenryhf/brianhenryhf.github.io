@@ -4,4 +4,9 @@
 
 layout: default
 ---
-Ok then
+[Github](https://github.com/brianhenryhf)
+
+[Stack Overflow](https://stackoverflow.com/users/1795230/brian-henry)
+
+[LinkedIn](https://www.linkedin.com/in/brian-henry-codes/)
+
