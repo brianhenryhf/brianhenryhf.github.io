@@ -4,7 +4,14 @@
 
 layout: default
 ---
-Hi.  I'm Brian.  I've wrangled software for years now - web, enterprise stack, devops, you name it.  I solve complicated new problems, and I untangle byzantine legacy codebases.  I like to work with folks inside and outside of tech, and make complex problems more comprehensible.  Please let me know if I can help super-charge your business!
+Hi.  I'm Brian.  
+
+I've wrangled software for years now - web, enterprise stack, devops, you name it.  I solve complicated new problems, and I untangle byzantine legacy codebases.  I like to work with folks inside and outside of tech, and make complex problems comprehensible and, most importantly, get them solved.  
+
+Please let me know how I can help your business thrive!: <a href="mailto:info@bitpan.com">Email</a>
+
+----
+**Links:**
 
 [Github](https://github.com/brianhenryhf)
 
