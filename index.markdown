@@ -7,7 +7,7 @@ I've wrangled software for years now - web, enterprise stack, devops, you name i
 
 Please let me know how I can help your business thrive!: <a href="mailto:info@bitpan.com">info@bitpan.com</a>
 
-(Also, while work is important, I also love to cook (instant pot or bbq are current foci; always working on unlocking the best roaasted veggies), am learning archery (recurve target shooting, mostly badly), care for a rabbit (a senior sweetheart), and am learning to solder (slowly... I'll build the perfect keyboard someday...)
+(Also, while work is important, I also love to cook (instant pot or bbq are current foci; always working on unlocking the best roasted veggies), am learning archery (recurve target shooting, mostly badly), care for a rabbit (a senior sweetheart), and am learning to solder (slowly... I'll build the perfect keyboard someday...)
 
 
 &nbsp; 
