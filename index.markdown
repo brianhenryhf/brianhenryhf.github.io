@@ -22,7 +22,7 @@ Please let me know how I can help your business thrive!: <a href="mailto:info@bi
 
 Recent Certifications:
 
-- [Brian @ Google Cloud Platform](https://www.credential.net/01fb0598-7d45-49ec-9ddb-90dcd1e95f0e?key=2532997703de89061a86e62847725b33cf661cbbb3873cca1e23802523269693)
+- [Google Professional Cloud Developer](https://www.credential.net/01fb0598-7d45-49ec-9ddb-90dcd1e95f0e?key=2532997703de89061a86e62847725b33cf661cbbb3873cca1e23802523269693)
 
-- Brian @ Amazon Web Services - Coming Soon
+- [AWS Certified Developer – Associate](https://www.credly.com/badges/a3247895-1788-4456-8494-5a8b5dd705cc)
 
