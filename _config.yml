@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+    # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -21,7 +21,7 @@
 title: okblt
 email: brian@okblt.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Online home of Brian Henry: engineer, polymath, layabout, gadfly, etc.
+  Online home of Brian Henry: Experienced Software Professional
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://okblt.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  brianhenryhf
