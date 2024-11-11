@@ -3,11 +3,11 @@ layout: default
 ---
 Hi.  I'm Brian.  
 
-I've wrangled software for years now - web, enterprise stack, devops, you name it.  I solve complicated new problems, and I untangle byzantine legacy codebases.  I like to work with folks inside and outside of tech - I love to  make complex problems comprehensible and, most importantly, get them solved.  
+I've wrangled software for over a decade now - web, enterprise stack, DevOps, async processing, fat client GUIs - you name it.  I solve complicated new problems, and I untangle byzantine legacy codebases.  I like to work with folks inside and outside of tech - I love to  make complex problems comprehensible and, most importantly, get them solved.  
 
-Please [let me know](https://www.linkedin.com/in/brian-henry-codes/) how my I can help your business thrive!
+Please [let me know](https://www.linkedin.com/in/brian-henry-codes/) how I can help your business thrive!
 
-(Also, while work is important, I also love to cook (instant pot or bbq are current foci; always working on unlocking the best roasted veggies), am learning archery (recurve target shooting, mostly badly), care for a rabbit (a senior sweetheart), and am learning to solder (slowly... I'll build the perfect keyboard someday...)
+(Also, while work is important, I also love to cook (instant pot or bbq are current go-to's. And always working on unlocking the best roasted veggies), am learning archery (recurve target shooting. Mostly badly), care for a rabbit (a senior sweetheart), and am learning to solder (slowly... I'll build the perfect keyboard someday.)
 
 
 &nbsp; 
